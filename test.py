@@ -1,11 +1,11 @@
-from flask import Flask
-app = Flask(_name_)
+ffrom flask import Flask
+server = Flask(__name__)
 
-@app.route("/")
-def Home():
-    return "<h1>555</h1>"
+@server.route("/")
+def hello():
+    return "<h1>Hello Anucha Moonladab</h1>"
 
 
-if _name_ == '_main_':
+if __name__ == '__main__':
     #app.run(debug=True)
-    app.run(host='0.0.0.0', port=80)
+    server.run(host='0.0.0.0', port=80)
